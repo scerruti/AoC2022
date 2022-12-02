@@ -1,6 +1,8 @@
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.List;
+
+import static java.nio.file.Files.readAllLines;
 
 public abstract class Day {
 
@@ -21,9 +23,9 @@ public abstract class Day {
 
     void solve() {
 
-        String input;
+        List<String> input;
         try {
-            input = Files.readString(Path.of(String.format("resources/Day%02d.txt", n)));
+            input = readAllLines(Path.of(String.format("resources/Day%02d.txt", n)));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -43,8 +45,8 @@ public abstract class Day {
         System.out.printf("Part 2 took %d ms%n", time2);
     }
 
-    abstract int part1(String input);
+    abstract int part1(List<String> input);
 
-    abstract int part2(String input);
+    abstract int part2(List<String> input);
 
 }

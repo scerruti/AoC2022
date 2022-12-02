@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 import static java.util.Collections.max;
 
@@ -10,26 +11,17 @@ public class Day01 extends Day {
     }
 
     @Override
-    int part1(String input) {
-        // Traverse over the input breaking the string into substrings
-        int start = 0; // Pointer to the current position in the string
-        int end; // Location where the next line break can be found
+    int part1(List<String> input) {
         int caloriesSum = 0; // Accumulates the calories for an elf
         int max = 0; // The largest elf calorie count seen so far
 
-        // This is a really cool way to do a loop using indexOf
-        // it is slightly outside the subset as the two argument
-        // indexOf method is not on the reference sheet. It could
-        // be implemented by constantly dividing the string into
-        // the calorieString and the remaining part.
-        while ((end = input.indexOf("\n", start)) != -1) {
-            // Extract the string representing one line
-            String caloriesString = input.substring(start, end);
+        // Look at each line of input
+        for (String line: input) {
 
             // if we encounter a blank line the start and end values
             // will match. This means we should check this elf's
             // load against the max.
-            if (end == start) {
+            if (line.length() == 0) {
                 if (caloriesSum > max) {
                     max = caloriesSum;
                 }
@@ -37,11 +29,8 @@ public class Day01 extends Day {
                 caloriesSum = 0;
             } else {
                 // Otherwise just accumulate the calories
-                caloriesSum += Integer.parseInt(caloriesString);
+                caloriesSum += Integer.parseInt(line);
             }
-
-            // Now move our pointer to the next character following the line break
-            start = end + 1;
         }
 
         // Don't forget to check if the last elf is carrying the most
@@ -55,24 +44,20 @@ public class Day01 extends Day {
     }
 
     @Override
-    int part2(String input) {
+    int part2(List<String> input) {
         // Instead of using our max algorithm we are going to keep track of all of
         // the elves calories by adding them into an ArrayList.
         // We use an ArrayList because we don't know the number of elves in advance
-        int start = 0;
-        int end;
         int caloriesSum = 0;
         ArrayList<Integer> elfCalories = new ArrayList<>();
 
-        while ((end = input.indexOf("\n", start)) != -1) {
-            String caloriesString = input.substring(start, end);
-            if (end == start) {
+        for (String line: input) {
+            if (line.length() == 0) {
                 elfCalories.add(caloriesSum);
                 caloriesSum = 0;
             } else {
-                caloriesSum += Integer.parseInt(caloriesString);
+                caloriesSum += Integer.parseInt(line);
             }
-            start = end + 1;
         }
 
         // Don't forget to add the last elf
