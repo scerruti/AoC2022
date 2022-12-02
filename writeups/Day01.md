@@ -1,19 +1,19 @@
 # [--- Day 1: Calorie Counting ---](https://adventofcode.com/2022/day/1)
 
+### Update 12/1/2022
+This version is a significant change to the code initially posted because I altered the runner to pass in an list of lines rather than a single string. This list could be converted to an Array if you want to exercise that skill. You can use the version history to see the previous version.
+
 ## Summary
 
-This problem can be used to reenforce the concepts of Array and ArrayList algorithms. One method in this solution is a pure maximum value of an Integer ArrayList. It also shows the use of the substring function to break the input from a single String into multiple parts. 
+This problem demonstrates using an enhanced for loop to travers a List of Strings passed in as a parameter. It could be converted to an Array and the algorithm still works.
 
 ## Topics
-1. Traversing a string with indexOf.
-1. Creating substrings.
-1. Computing sums.
-1. Finding the maximum value.
+1. Enhanced for loop
+1. Simple maximum value algorithm
+1. Combined summation and max value algorithm.
 1. Converting strings to integers.
 
 ## Deviations from the AP CSA Java Subset
 
 The Java subset does not include a way to covert Strings to Integers. I used the Integer wrapper method parseInt which can be very useful. This could be avoided by using scanner on the input file.
-
-I used the indexOf with two arguments to show how to traverse a String using a while loop. This could easily be replaced by a more subset friendly approach that constantly builds a separate 'remaining' substring.
 
