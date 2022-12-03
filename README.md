@@ -9,8 +9,13 @@ Each year I attempt to solve the Advent of Code using the AP CSA subset and writ
 I make every attempt to note where I have gone outside the lines.
 
 ## Write Ups
-
-In the past I did write ups as Facebook posts. This year I will be doing the write ups on GitHub and sharing them on the csed.social mastodon instance. Please see the [writeups folder](writeups).
+1. [--- Day 1: Calorie Counting ---](writeups/Day01.md)
+    - `Array` algorithms
+2. [--- Day 2: Rock Paper Scissors ---](writeups/Day03.md)
+    - `If` statements
+3. [--- Day 3: Rucksack Reorganization ---](writeups/Day03.md)
+    - `String` methods (`substring`, `indexOf`)
+    - Iterating over `Lists` and `Strings` multiple ways
 
 ## Notes
 
