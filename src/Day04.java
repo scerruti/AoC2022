@@ -8,6 +8,8 @@ import java.util.Scanner;
 public class Day04 extends Day {
 
 
+    private static final String DIGITS = "0123456789";
+
     Day04() {
         super(4);
     }
@@ -31,8 +33,23 @@ public class Day04 extends Day {
         ArrayList<String> elf1 = split(pairs.get(0), "-");
         ArrayList<String> elf2 = split(pairs.get(1), "-");
 
-        return new int[] {Integer.parseInt(elf1.get(0)), Integer.parseInt(elf1.get(1)),
-                Integer.parseInt(elf2.get(0)), Integer.parseInt(elf2.get(1))};
+        return new int[] {parseInt(elf1.get(0)), parseInt(elf1.get(1)),
+                parseInt(elf2.get(0)), parseInt(elf2.get(1))};
+    }
+
+    public static int parseInt(String number) {
+        int value = 0;
+
+        for (int i = 0; i < number.length(); i++) {
+            value = value * 10;
+            int placeValue = DIGITS.indexOf(number.substring(i,i+1));
+            if (placeValue != -1) {
+                value += placeValue;
+            } else {
+                throw new RuntimeException("Number parsing error for character " + i + " of " + number + ".");
+            }
+        }
+        return value;
     }
 
     public static ArrayList<String> split(String string, String delimiter) {
