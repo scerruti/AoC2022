@@ -67,7 +67,7 @@ All you really need to do is figure out the correct boolean statement and apply 
 ```
 
 ### Part 2 
-Part 2 is identical to part 1 with a simple change to the boolean expression.
+Part 2 is identical to part 1 with a simple change to the boolean expression. [Stack Overflow](https://stackoverflow.com/questions/325933/determine-whether-two-date-ranges-overlap) has a good discussion of different ways to solve this problem.
 ```java
             if (bounds[1] >= bounds[2] && bounds[0] <= bounds[3] ) {
 ```
