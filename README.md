@@ -16,6 +16,10 @@ I make every attempt to note where I have gone outside the lines.
 3. [--- Day 3: Rucksack Reorganization ---](writeups/Day03.md)
     - `String` methods (`substring`, `indexOf`)
     - Iterating over `Lists` and `Strings` multiple ways
+4. [--- Day 4: Camp Cleanup ---](writeups/Day04.md)
+   - `boolean` expressions 
+   - AP subset issues for String.split() and Integer.parseInt()
+
 
 ## Notes
 
