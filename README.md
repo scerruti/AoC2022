@@ -17,9 +17,11 @@ I make every attempt to note where I have gone outside the lines.
     - `String` methods (`substring`, `indexOf`)
     - Iterating over `Lists` and `Strings` multiple ways
 4. [--- Day 4: Camp Cleanup ---](writeups/Day04.md)
-   - `boolean` expressions 
+   - `boolean` expressions
    - AP subset issues for String.split() and Integer.parseInt()
-
+5. [--- Day 5: Supply Stacks ---](writeups/Day05.md)
+   - Array and ArrayList algorithms
+   - Some string parsing
 
 ## Notes
 
