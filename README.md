@@ -22,6 +22,11 @@ I make every attempt to note where I have gone outside the lines.
 5. [--- Day 5: Supply Stacks ---](writeups/Day05.md)
    - Array and ArrayList algorithms
    - Some string parsing
+6. [--- Day 5: Tuning Trouble ---](writeups/Day06.md)
+   - for loop
+   - String methods
+      - indexOf
+      - substring
 
 ## Notes
 
