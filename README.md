@@ -27,7 +27,7 @@ I make every attempt to note where I have gone outside the lines.
    - String methods
       - indexOf
       - substring
-7. --- Day 7: No Space Left on Device ---
+7. [--- Day 7: No Space Left on Device ---](writeups/Day07.md)
    - _Write up pending_
    - My solution uses recursion.
    - Inner class used 
