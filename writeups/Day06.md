@@ -1,4 +1,4 @@
-# [--- Day 6: Tuning Trouble ---](https://adventofcode.com/2022/day/5)
+# [--- Day 6: Tuning Trouble ---](https://adventofcode.com/2022/day/6)
 
 ## Summary
 Tuning trouble makes use of only a `for` loop and `String` methods. It is achievable for advance AP students, but they will need to give it some thought. Parts 1 and 2 only differ in the size of the unique sequence meaning the algorithm is identical.
@@ -11,9 +11,6 @@ For each character of the input,
     Add the character to the end of the candidate string.
     If the candidate string has reached the target length,
         The unique sequence has been found!
-
-#### Error!
-During the write up I realized that if the character appeared in the code twice we could have a logic error. We should have removed up to and including the last occurance of the next character.
 
 ### Here is the code for Part 1
 Initialize some variables, code is the input, we are building sequences in chunk.
