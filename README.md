@@ -22,11 +22,16 @@ I make every attempt to note where I have gone outside the lines.
 5. [--- Day 5: Supply Stacks ---](writeups/Day05.md)
    - Array and ArrayList algorithms
    - Some string parsing
-6. [--- Day 5: Tuning Trouble ---](writeups/Day06.md)
+6. [--- Day 6: Tuning Trouble ---](writeups/Day06.md)
    - for loop
    - String methods
       - indexOf
       - substring
+7. --- Day 7: No Space Left on Device ---
+   - _Write up pending_
+   - My solution uses recursion.
+   - Inner class used 
+   - Integer.parseInt
 
 ## Notes
 
