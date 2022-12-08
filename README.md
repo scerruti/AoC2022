@@ -28,11 +28,15 @@ I make every attempt to note where I have gone outside the lines.
       - indexOf
       - substring
 7. [--- Day 7: No Space Left on Device ---](writeups/Day07.md)
-   - _Write up pending_
+   - Use a tree to represent a file system and answer questions about directory sizes.
    - My solution uses recursion.
    - Inner class used 
    - Integer.parseInt
-
+8. [--- Day 8: Treetop Tree House ---](writeups/Day08.md)
+   - Construct a 2D array of tree heights from the input and answer questions about relative tree heights in the cardinal directions.
+   - Demonstrates count algorithm with 2D arrays
+   - Demonstrates max algorithm with 2D arrays
+   - Shows how to generify a method to traverse in cardinal directions
 ## Notes
 
 I wanted to use an existing framework to build out the Java code for each day and I chose poorly. Most frameworks for AoC hand the input to a solver method. Because the new [Code.org](https://code.org) AP CSA curriculum uses Scanner against files I may rewrite the early solutions to make use of that. This will remove some substring operations but will provide a subset compliant method for converting input into numeric values.
