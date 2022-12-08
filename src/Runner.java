@@ -10,6 +10,7 @@ public class Runner {
 
         try {
             Class<?> clazz = Class.forName(String.format("Day%02d", dayOfMonth));
+//            Class<?> clazz = Class.forName(String.format("Day%02db", dayOfMonth));
             Day day = (Day) clazz.getDeclaredConstructor().newInstance();
             day.solve();
 
