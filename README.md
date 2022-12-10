@@ -37,6 +37,10 @@ I make every attempt to note where I have gone outside the lines.
    - Demonstrates count algorithm with 2D arrays
    - Demonstrates max algorithm with 2D arrays
    - Shows how to generify a method to traverse in cardinal directions
+9. [--- Day 9: Rope Bridge ---](writeups/Day09.md)
+   - ArrayLists (checking ArrayLists for matching objects)
+   - Working with coordinate pairs
+   - Lots of nested loops
 ## Notes
 
 I wanted to use an existing framework to build out the Java code for each day and I chose poorly. Most frameworks for AoC hand the input to a solver method. Because the new [Code.org](https://code.org) AP CSA curriculum uses Scanner against files I may rewrite the early solutions to make use of that. This will remove some substring operations but will provide a subset compliant method for converting input into numeric values.

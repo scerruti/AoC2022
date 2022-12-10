@@ -37,7 +37,7 @@ public class Day09 extends Day {
     }
 
     public int part2(List<String> input) {
-        HashSet<Point> points = new HashSet<>();
+        ArrayList<Point> points = new ArrayList<>();
         Point[] knots = new Point[10];
         for (int i = 0; i < 10; i++) knots[i] = new Point(0,0);
         points.add(new Point(knots[9]));
@@ -53,7 +53,7 @@ public class Day09 extends Day {
                 for (int k = 1; k < 10; k++) {
                     if (knots[k].distanceTo(knots[k-1]) > 1) {
                         knots[k].moveTo(knots[k-1]);
-                        if (k == 9) {
+                        if (k == 9 && !knots[k].containedIn(points)) {
                             points.add(new Point(knots[k]));
                         }
                     }
@@ -80,21 +80,6 @@ public class Day09 extends Day {
             System.out.println();
         }
         System.out.println("\n\n");
-    }
-
-    private Point moveTo(Point actor, Point target) {
-        if (actor.x == target.x || actor.y == target.y) {
-            if (Math.abs(actor.x - target.x) > Math.abs(actor.y - target.y)) {
-                return new Point(actor.x > target.x ? actor.x - 1 : actor.x + 1, actor.y);
-            } else if (Math.abs(actor.x - target.x) < Math.abs(actor.y - target.y)) {
-                return new Point(actor.x, actor.y > target.y ? actor.y - 1 : actor.y + 1);
-            }
-        } else {
-            return new Point(actor.x > target.x?actor.x - 1 : actor.x + 1, actor.y > target.y?actor.y - 1 :
-            actor.y + 1);
-        }
-
-        return null;
     }
 
     private static class Point {
