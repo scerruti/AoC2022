@@ -9,9 +9,9 @@ public class Runner {
         int dayOfMonth = cal.get(Calendar.DAY_OF_MONTH);
 
         try {
-            Class<?> clazz = Class.forName(String.format("Day%02d", dayOfMonth));
+//            Class<?> clazz = Class.forName(String.format("Day%02d", dayOfMonth));
 //            Class<?> clazz = Class.forName(String.format("Day%02db", dayOfMonth));
-//            Class<?> clazz = Class.forName(String.format("Day09"));
+            Class<?> clazz = Class.forName(String.format("Day13"));
             Day day = (Day) clazz.getDeclaredConstructor().newInstance();
             day.solve();
 
