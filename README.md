@@ -42,8 +42,15 @@ I make every attempt to note where I have gone outside the lines.
    - Working with coordinate pairs
    - Lots of nested loops
 10. [--- Day 10: Cathode-Ray Tube ---](writeups/Day10.md)
-   - Substrings
-   - Modulo
+      - Substrings
+      - Modulo
+11. _missing_
+12. _missing_
+13. [--- Day 13: Distress Signal ---](writeups/Day13.md)
+      - Inheritance
+      - Polymorphism
+      - Arrays
+      - String methods
 
 ## Notes
 
