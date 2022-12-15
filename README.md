@@ -45,7 +45,11 @@ I make every attempt to note where I have gone outside the lines.
       - Substrings
       - Modulo
 11. _missing_
-12. _missing_
+12. [--- Day 12: Hill Climbing Algorithm ---](writeups/Day12.md)
+    - Great extension project
+    - Breadth first search (maze solving)
+    - Lambdas (this is a bit out of AP spec)
+    - Array Lists and 2D Arrays
 13. [--- Day 13: Distress Signal ---](writeups/Day13.md)
       - Inheritance
       - Polymorphism

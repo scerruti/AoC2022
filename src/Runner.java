@@ -11,7 +11,7 @@ public class Runner {
         try {
 //            Class<?> clazz = Class.forName(String.format("Day%02d", dayOfMonth));
 //            Class<?> clazz = Class.forName(String.format("Day%02db", dayOfMonth));
-            Class<?> clazz = Class.forName(String.format("Day13"));
+            Class<?> clazz = Class.forName(String.format("Day12"));
             Day day = (Day) clazz.getDeclaredConstructor().newInstance();
             day.solve();
 
